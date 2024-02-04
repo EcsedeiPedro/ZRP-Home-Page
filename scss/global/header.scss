@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  position: relative;
+
+  .container-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .logo {
+      img {
+        width: 41px;
+      }
+    }
+
+    .main-navigation {
+      .menu {
+        display: flex;
+        gap: 30px;
+
+        .menu-item {
+          padding: 14px 20px;
+          transition: all 0.5s ease;
+          background-color: transparent;
+          border-radius: 32px;
+
+          a {
+            color: black;
+            font-weight: 400;
+            font-size: 14px;
+          }
+
+          &:hover {
+            background-color: black;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 992px) {
+        position: absolute;
+        width: 100%;
+        background-color: $primaryColor;
+        box-shadow: 0 2px 5px rgba(0,0,0,.2), 0 18px 30px rgba(0,0,0,.1);
+        border-radius: 32px;
+        top: -1000px;
+        z-index: 1000;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+
+        .menu {
+          flex-direction: column;
+
+          .menu-item {
+            a {
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        &.active {
+          top: 90px;
+          animation: bounce 0.5s ease; /* Adiciona a animação de quicar */
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .button {
+        background-color: $secondaryColor;
+        padding: 12px 30px;
+        color: $primaryColor;
+        font-size: 19.2px;
+        font-weight: 800;
+        border-radius: 32px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: black;
+        }
+      }
+
+      .mobile-menu-button {
+        cursor: pointer;
+        position: relative;
+        height: 15px;
+        width: 20px;
+        align-items: center;
+        display: none;
+
+        @media (max-width: 991px) {
+          display: flex;
+        }
+
+        div {
+          width: 20px;
+          height: 3px;
+          background-color: black;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 3px;
+            background-color: black;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            height: 3px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}

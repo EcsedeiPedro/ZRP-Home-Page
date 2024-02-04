@@ -1,0 +1,35 @@
+* {
+    font-family: $fontBase;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+        width: 90%;
+    }
+}
+
+.container {
+    max-width: 1232px;
+}

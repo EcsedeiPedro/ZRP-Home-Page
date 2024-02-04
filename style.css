@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  font-family: "Sora", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container-header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .container-header {
+    width: 90%;
+  }
+}
+
+.container {
+  max-width: 1232px;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  position: relative;
+}
+.header .container-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header .container-header .logo img {
+  width: 41px;
+}
+.header .container-header .main-navigation .menu {
+  display: flex;
+  gap: 30px;
+}
+.header .container-header .main-navigation .menu .menu-item {
+  padding: 14px 20px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border-radius: 32px;
+}
+.header .container-header .main-navigation .menu .menu-item a {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header .container-header .main-navigation .menu .menu-item:hover {
+  background-color: black;
+}
+.header .container-header .main-navigation .menu .menu-item:hover a {
+  color: white;
+}
+@media (max-width: 992px) {
+  .header .container-header .main-navigation {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 18px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    top: -1000px;
+    z-index: 1000;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .container-header .main-navigation .menu {
+    flex-direction: column;
+  }
+  .header .container-header .main-navigation .menu .menu-item a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .header .container-header .main-navigation.active {
+    top: 90px;
+    animation: bounce 0.5s ease; /* Adiciona a animação de quicar */
+  }
+}
+.header .container-header .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .container-header .right .button {
+  background-color: #f15e5e;
+  padding: 12px 30px;
+  color: white;
+  font-size: 19.2px;
+  font-weight: 800;
+  border-radius: 32px;
+  transition: all 0.5s ease;
+}
+.header .container-header .right .button:hover {
+  background-color: black;
+}
+.header .container-header .right .mobile-menu-button {
+  cursor: pointer;
+  position: relative;
+  height: 15px;
+  width: 20px;
+  align-items: center;
+  display: none;
+}
+@media (max-width: 991px) {
+  .header .container-header .right .mobile-menu-button {
+    display: flex;
+  }
+}
+.header .container-header .right .mobile-menu-button div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+.header .container-header .right .mobile-menu-button div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+.header .container-header .right .mobile-menu-button div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
