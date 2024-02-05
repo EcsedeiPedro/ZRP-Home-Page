@@ -43,9 +43,93 @@
 
     img {
       max-width: 33vw;
+      max-height: 640px;
 
       @media (max-width: 991px) {
         display: none;
+      }
+    }
+  }
+}
+
+.differences {
+  margin-top: 80px;
+  color: white !important;
+
+  @media (max-width: 991px) {
+    height: 100%;
+    border-radius: 0;
+    background-color: #1b1b1b;
+  }
+
+  .container {
+    border-radius: 32px;
+    height: 700px;
+    background-color: #1b1b1b;
+    position: relative;
+    padding: 50px;
+
+    @media (max-width: 991px) {
+      height: 100%;
+      border-radius: 0;
+    }
+
+    .background {
+      position: absolute;
+      width: 53%;
+      height: 90%;
+      right: 0;
+      max-width: 1200px;
+      border-radius: 32px;
+      background: {
+        image: url("img/differences-background.png");
+        size: auto 100%;
+        repeat: no-repeat;
+        clip: border-box;
+      }
+      opacity: 0.1;
+    }
+
+    .box-content {
+      height: 70%;
+      display: flex;
+      gap: 40px;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
+
+      &__title {
+        margin-top: 150px;
+
+        h2 {
+          font-size: 46px;
+
+          span {
+            color: #9ccc62;
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @media (max-width: 991px) {
+          margin-top: 30px;
+        }
+    
+
+        p {
+          font-size: 19px;
+          color: $grayTextColor;
+        }
+
+        .button {
+          max-width: 350px;
+        }
       }
     }
   }

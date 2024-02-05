@@ -3,6 +3,7 @@
   background-color: $primaryColor;
   border-bottom: 1px solid #c7c7c7;
   position: fixed;
+  z-index: 1000;
 
   .container-header {
     position: relative;
