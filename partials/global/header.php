@@ -30,7 +30,7 @@
                     $link_target = $link['target'] ? $link['target'] : '_self';
 
                     echo <<<BUTTON
-                        <a class="button" href="$link_url" target="$link_target">
+                        <a class="button-header" href="$link_url" target="$link_target">
                             $link_title
                         </a>
                     BUTTON;

@@ -1,7 +1,8 @@
 .header {
   width: 100%;
+  background-color: $primaryColor;
   border-bottom: 1px solid #c7c7c7;
-  position: relative;
+  position: fixed;
 
   .container-header {
     position: relative;
@@ -76,20 +77,6 @@
       display: flex;
       align-items: center;
       gap: 20px;
-
-      .button {
-        background-color: $secondaryColor;
-        padding: 12px 30px;
-        color: $primaryColor;
-        font-size: 19.2px;
-        font-weight: 800;
-        border-radius: 32px;
-        transition: all 0.5s ease;
-
-        &:hover {
-          background-color: black;
-        }
-      }
 
       .mobile-menu-button {
         cursor: pointer;
