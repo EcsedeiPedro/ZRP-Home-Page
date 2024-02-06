@@ -458,4 +458,77 @@ body {
   right: 60px;
 }
 
+.faq {
+  padding: 80px;
+}
+.faq .container {
+  display: flex;
+  justify-content: space-between;
+}
+.faq .container .esq {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.faq .container .esq h3 {
+  font-size: 48px;
+  color: #1b1b1b;
+  font-weight: 700;
+}
+.faq .container .esq p {
+  font-size: 19px;
+  color: #7a7a7a;
+}
+.faq .container .esq .button {
+  max-width: 400px;
+  padding-right: 50px;
+}
+.faq .container .esq .button::after {
+  right: 50px;
+}
+.faq .container .faqs {
+  width: 60%;
+}
+.faq .container .faqs__item {
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-top: 1px solid #d6d6d6;
+}
+.faq .container .faqs__item--header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1b1b;
+  display: flex;
+  justify-content: space-between;
+}
+.faq .container .faqs__item--header .open-close-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url("img/plus-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.3s ease all;
+}
+.faq .container .faqs__item--header .open-close-icon.active {
+  rotate: 45deg;
+}
+.faq .container .faqs__item--content {
+  margin-top: 25px;
+  color: #797979;
+}
+.faq .container .faqs__item--content ul,
+.faq .container .faqs__item--content ol {
+  padding-left: 40px;
+}
+.faq .container .faqs__item--content ul li,
+.faq .container .faqs__item--content ol li {
+  list-style: disc;
+  color: gray;
+  font-size: 1.2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

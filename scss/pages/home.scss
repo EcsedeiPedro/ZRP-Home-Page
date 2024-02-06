@@ -211,3 +211,93 @@
     }
   }
 }
+
+.faq {
+  padding: 80px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .esq {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      h3 {
+        font-size: 48px;
+        color: #1b1b1b;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 19px;
+        color: #7a7a7a;
+      }
+
+      .button {
+        max-width: 400px;
+        padding-right: 50px;
+
+        &::after {
+          right: 50px;
+        }
+      }
+    }
+
+    .faqs {
+      width: 60%;
+
+      &__item {
+        cursor: pointer;
+        padding: {
+          top: 20px;
+          bottom: 10px;
+        }
+        width: 100%;
+        border-top: 1px solid #d6d6d6;
+
+        &--header {
+          font-size: 18px;
+          font-weight: 600;
+          color: #1b1b1b;
+          display: flex;
+          justify-content: space-between;
+
+          .open-close-icon {
+            width: 16px;
+            height: 16px;
+            background: {
+              image: url("img/plus-icon.png");
+              size: cover;
+              repeat: no-repeat;
+              position: center center;
+            }
+            transition: 0.3s ease all;
+
+            &.active {
+              rotate: 45deg;
+            }
+          }
+        }
+
+        &--content {
+          margin-top: 25px;
+          color: #797979;
+
+          ul,
+          ol {
+            padding-left: 40px;
+
+            li {
+              list-style: disc;
+              color: gray;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
