@@ -15,7 +15,8 @@
                         
                         echo <<<BUTTONBANNERLINK
                         <a class="button" href="$linkButtonBanner_url" target="$linkButtonBanner_target">
-                        $linkButtonBanner_title
+                            $linkButtonBanner_title
+                            <div class="arrow-icon"></div>
                         </a>
                         BUTTONBANNERLINK;
                     } 

@@ -33,10 +33,6 @@
         @media (max-width: 991px) {
           display: flex;
           justify-content: center;
-
-          .button {
-            width: 250px;
-          }
         }
       }
     }
@@ -105,6 +101,10 @@
         h2 {
           font-size: 46px;
 
+          @media (max-width: 497px) {
+            font-size: 32px;
+          }
+
           span {
             color: #9ccc62;
           }
@@ -125,10 +125,6 @@
           font-size: 19px;
           color: $grayTextColor;
         }
-
-        .button {
-          max-width: 350px;
-        }
       }
     }
   }
@@ -142,6 +138,10 @@
 
   @media (max-width: 991px) {
     margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
   }
 
   .container {
@@ -205,21 +205,16 @@
         }
       }
     }
-
-    .button {
-      max-width: 500px;
-      padding-right: 100px;
-
-      &::after {
-        right: 60px;
-      }
-    }
   }
 }
 
 .faq {
   padding: 80px;
   background-color: #f0f0f0;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 
   .container {
     display: flex;
@@ -250,27 +245,6 @@
       p {
         font-size: 19px;
         color: #7a7a7a;
-      }
-
-      .button {
-        max-width: 400px;
-        padding-right: 50px;
-
-        @media (max-width: 1199px) {
-          width: 450px;
-        }
-
-        @media (max-width: 619px) {
-          width: 250px;
-        }
-
-        &::after {
-          right: 50px;
-
-          @media (max-width: 619px) {
-            right: 25px;
-          }
-        }
       }
     }
 

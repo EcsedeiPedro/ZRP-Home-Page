@@ -22,6 +22,7 @@
                 echo <<<SERVICESBUTTON
                     <a class="button" href="$linkServicesButton_url" target="$linkServicesButton_target">
                         $linkServicesButton_title
+                        <div class="arrow-icon"></div>
                     </a>
                 SERVICESBUTTON;
             } 

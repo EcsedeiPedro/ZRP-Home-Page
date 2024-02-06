@@ -15,6 +15,7 @@
                     echo <<<FAQBUTTON
                         <a class="button" href="$linkFaqButton_url" target="$linkFaqButton_target">
                             $linkFaqButton_title
+                            <div class="arrow-icon"></div>
                         </a>
                     FAQBUTTON;
                 } 

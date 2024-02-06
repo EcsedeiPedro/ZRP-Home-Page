@@ -20,6 +20,7 @@
                         echo <<<BUTTONBANNERLINK
                             <a class="button" href="$linkDifferencesButton_url" target="$linkDifferencesButton_target">
                                 $linkDifferencesButton_title
+                                <div class="arrow-icon"></div>
                             </a>
                         BUTTONBANNERLINK;
                     } 
