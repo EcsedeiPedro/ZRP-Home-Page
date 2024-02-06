@@ -53,7 +53,7 @@
 }
 
 .differences {
-  margin-top: 80px;
+  margin-top: 120px;
   color: white !important;
 
   @media (max-width: 991px) {
@@ -120,7 +120,6 @@
         @media (max-width: 991px) {
           margin-top: 30px;
         }
-    
 
         p {
           font-size: 19px;
@@ -130,6 +129,84 @@
         .button {
           max-width: 350px;
         }
+      }
+    }
+  }
+}
+
+.services {
+  margin-top: 80px;
+  background-color: $darkColorBackground;
+  width: 100%;
+  padding: 80px 20px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    .title {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+
+      span {
+        color: #ea7d34;
+      }
+    }
+
+    .boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+
+      @media (max-width: 1243px) {
+        flex-direction: column;
+      }
+
+      &__item {
+        max-width: 626px;
+        border-radius: 20px;
+        background-color: $darkColor;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: 1355px) {
+          max-width: 590px;
+        }
+
+        @media (max-width: 1243px) {
+          max-width: 540px;
+        }
+
+        @media (max-width: 1199px) {
+          max-width: 100%;
+        }
+
+        &--title {
+          color: $primaryColor;
+          font-size: 28px;
+          font-weight: 700;
+        }
+
+        &--description {
+          color: $grayTextColor;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .button {
+      max-width: 500px;
+      padding-right: 100px;
+
+      &::after {
+        right: 60px;
       }
     }
   }

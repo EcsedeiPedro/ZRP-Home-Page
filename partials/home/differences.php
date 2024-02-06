@@ -2,11 +2,11 @@
     <div class="container">
         <div class="background"></div>
         <div class="box-content">
-            <div class="box-content__title">
+            <div data-aos="fade-right" data-aos-duration="1500" class="box-content__title">
                 <h2><?php the_field('differences_title'); ?></h2>
             </div>
 
-            <article class="box-content__text">
+            <article class="box-content__text" data-aos="fade-left" data-aos-duration="1500">
                 <?php 
                     the_field('editor'); 
                     

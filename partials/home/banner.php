@@ -1,4 +1,4 @@
-<section class="banner">
+<section class="banner" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <div class="content">
             <h1><?php the_field('banner_title'); ?></h1>

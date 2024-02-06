@@ -27,6 +27,17 @@
     
     add_action('wp_enqueue_scripts', 'jquery_add');
 
+    function enqueue_aos_script() {
+        // Registrando o script
+        wp_register_script('aos-script', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), null, true);
+    
+        // Enfileirando o script
+        wp_enqueue_script('aos-script');
+    }
+    
+    // Gancho (hook) para adicionar scripts
+    add_action('wp_enqueue_scripts', 'enqueue_aos_script');
+
     if( function_exists('acf_add_options_page') ) {
 
         acf_add_options_page(array(
