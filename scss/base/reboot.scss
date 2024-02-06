@@ -28,16 +28,20 @@ body {
 
 .container-header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1316px;
   margin: 0 auto;
 
   @media (max-width: 991px) {
-    width: 90%;
+    max-width: 95%;
   }
 }
 
 .container {
   max-width: 1316px;
+
+  @media (max-width: 991px) {
+    max-width: 95%;
+  }
 }
 
 .button-header {
@@ -67,6 +71,10 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+
+  @media (max-width: 619px) {
+    font-size: 16px;
+  }
 
   &::after {
     content: "";

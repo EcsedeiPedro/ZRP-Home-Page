@@ -140,6 +140,10 @@
   width: 100%;
   padding: 80px 20px;
 
+  @media (max-width: 991px) {
+    margin-top: 0;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -163,8 +167,9 @@
       justify-content: space-between;
       gap: 40px;
 
-      @media (max-width: 1243px) {
+      @media (max-width: 1298px) {
         flex-direction: column;
+        align-items: center;
       }
 
       &__item {
@@ -214,16 +219,27 @@
 
 .faq {
   padding: 80px;
+  background-color: #f0f0f0;
 
   .container {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      gap: 50px;
+    }
 
     .esq {
       width: 40%;
       display: flex;
       flex-direction: column;
       gap: 50px;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+        align-items: center;
+      }
 
       h3 {
         font-size: 48px;
@@ -240,14 +256,30 @@
         max-width: 400px;
         padding-right: 50px;
 
+        @media (max-width: 1199px) {
+          width: 450px;
+        }
+
+        @media (max-width: 619px) {
+          width: 250px;
+        }
+
         &::after {
           right: 50px;
+
+          @media (max-width: 619px) {
+            right: 25px;
+          }
         }
       }
     }
 
     .faqs {
       width: 60%;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
 
       &__item {
         cursor: pointer;
@@ -264,6 +296,11 @@
           color: #1b1b1b;
           display: flex;
           justify-content: space-between;
+          gap: 30px;
+
+          @media (max-width: 717px) {
+            font-size: 14px;
+          }
 
           .open-close-icon {
             width: 16px;

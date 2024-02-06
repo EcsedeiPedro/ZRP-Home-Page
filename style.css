@@ -29,17 +29,22 @@ body {
 
 .container-header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1316px;
   margin: 0 auto;
 }
 @media (max-width: 991px) {
   .container-header {
-    width: 90%;
+    max-width: 95%;
   }
 }
 
 .container {
   max-width: 1316px;
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 95%;
+  }
 }
 
 .button-header {
@@ -68,6 +73,11 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+}
+@media (max-width: 619px) {
+  .button {
+    font-size: 16px;
+  }
 }
 .button::after {
   content: "";
@@ -391,6 +401,11 @@ body {
   width: 100%;
   padding: 80px 20px;
 }
+@media (max-width: 991px) {
+  .services {
+    margin-top: 0;
+  }
+}
 .services .container {
   display: flex;
   flex-direction: column;
@@ -412,9 +427,10 @@ body {
   justify-content: space-between;
   gap: 40px;
 }
-@media (max-width: 1243px) {
+@media (max-width: 1298px) {
   .services .container .boxes {
     flex-direction: column;
+    align-items: center;
   }
 }
 .services .container .boxes__item {
@@ -460,16 +476,29 @@ body {
 
 .faq {
   padding: 80px;
+  background-color: #f0f0f0;
 }
 .faq .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .faq .container {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 .faq .container .esq {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+@media (max-width: 1199px) {
+  .faq .container .esq {
+    width: 100%;
+    align-items: center;
+  }
 }
 .faq .container .esq h3 {
   font-size: 48px;
@@ -484,11 +513,31 @@ body {
   max-width: 400px;
   padding-right: 50px;
 }
+@media (max-width: 1199px) {
+  .faq .container .esq .button {
+    width: 450px;
+  }
+}
+@media (max-width: 619px) {
+  .faq .container .esq .button {
+    width: 250px;
+  }
+}
 .faq .container .esq .button::after {
   right: 50px;
 }
+@media (max-width: 619px) {
+  .faq .container .esq .button::after {
+    right: 25px;
+  }
+}
 .faq .container .faqs {
   width: 60%;
+}
+@media (max-width: 1199px) {
+  .faq .container .faqs {
+    width: 100%;
+  }
 }
 .faq .container .faqs__item {
   cursor: pointer;
@@ -503,6 +552,12 @@ body {
   color: #1b1b1b;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 717px) {
+  .faq .container .faqs__item--header {
+    font-size: 14px;
+  }
 }
 .faq .container .faqs__item--header .open-close-icon {
   width: 16px;

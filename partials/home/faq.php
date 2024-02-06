@@ -43,7 +43,11 @@
         $('.faqs__item--content').hide();
 
         $('.faqs__item--header').on('click', function() {
-            $(this).next('.faqs__item--content').slideToggle(300);
+            var content = $(this).next('.faqs__item--content');
+            $('.faqs__item--content').not(content).slideUp(300);
+            content.slideToggle(300);
+
+            $('.faqs__item--header .open-close-icon').not($(this).find('.open-close-icon')).removeClass('active');
             $(this).find('.open-close-icon').toggleClass('active');
         });
     })(jQuery);
